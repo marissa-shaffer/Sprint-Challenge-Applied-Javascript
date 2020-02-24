@@ -67,4 +67,11 @@ let CARDS = (obj) => {
     let span = document.createElement('span');
     span.textContent = `By ${obj.authorName}`;
 
+    card.appendChild(author);
+    card.appendChild(headLine);
+    author.appendChild(imgContainer);
+    author.appendChild(span);
+    imgContainer.appendChild(img);
+    
+    return card;
 }
