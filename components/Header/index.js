@@ -31,3 +31,6 @@ header.appendChild(spanTwo);
 
 return header;
 }
+
+let headerContainer = document.querySelector('.header-container');
+headerContainer.appendChild(Header());
