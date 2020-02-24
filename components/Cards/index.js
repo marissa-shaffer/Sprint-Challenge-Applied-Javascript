@@ -55,5 +55,16 @@ let CARDS = (obj) => {
     headLine.classList.add('headline');
     headLine.textContent = obj.headline;
 
-    
+    let author = document.createElement('div');
+    author.classList.add('author');
+
+    let imgContainer = document.createElement('div');
+    imgContainer.classList.add('img-container');
+
+    let img = document.createElement('img');
+    img.src = obj.authorPhoto;
+
+    let span = document.createElement('span');
+    span.textContent = `By ${obj.authorName}`;
+
 }
