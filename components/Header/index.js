@@ -9,7 +9,7 @@
 //  </div >
 // And add it to the DOM in the .header-container component
 
-function Header() {}
+function Header() {
 
 let header = document.createElement('div');
 header.classList.add('header');
@@ -25,5 +25,9 @@ let spanTwo = document.createElement('span')
 spanTwo.classList.add('temp');
 spanTwo.textContent = '98°';
 
+header.appendChild(spanOne);
+header.appendChild(h1);
+header.appendChild(spanTwo);
 
-
+return header;
+}
